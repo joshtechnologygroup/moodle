@@ -1,0 +1,80 @@
+// Post SCSS for the theme.
+
+.aabtn.focus,
+.aabtn:focus,
+.btn-link.focus,
+.btn-link:focus,
+.nav-link.focus,
+.nav-link:focus,
+.editor_atto_toolbar button.focus,
+.editor_atto_toolbar button:focus,
+.editor_atto_toolbar .atto_toolbar_row.focus,
+.editor_atto_toolbar .atto_toolbar_row:focus,
+[role="button"].focus,
+[role="button"]:focus,
+.list-group-item-action.focus,
+.list-group-item-action:focus,
+input[type="checkbox"].focus,
+input[type="checkbox"]:focus,
+input[type="radio"].focus,
+input[type="radio"]:focus,
+input[type="file"].focus,
+input[type="file"]:focus,
+input[type="image"].focus,
+input[type="image"]:focus,
+.sr-only-focusable.focus,
+.sr-only-focusable:focus,
+a.dropdown-toggle.focus,
+a.dropdown-toggle:focus,
+.moodle-dialogue-base .closebutton.focus,
+.moodle-dialogue-base .closebutton:focus,
+button.close.focus,
+button.close:focus,
+.form-autocomplete-selection.focus,
+.form-autocomplete-selection:focus,
+[role="treeitem"]:not([aria-expanded="true"]).focus,
+[role="treeitem"]:not([aria-expanded="true"]):focus {
+    outline: 0;
+    box-shadow: 0 0 0 1px $primary;
+}
+
+.navbar {
+    display: none;
+}
+
+#page-wrapper #page.drawers {
+    margin-top: 0;
+}
+
+.drawer {
+    top: 0;
+    height: 100vh;
+}
+
+body.pagelayout-login {
+    background-image: url([[pix:theme_photo|loginbackgroundimage]]);
+    background-size: cover;
+}
+body.pagelayout-frontpage {
+    background-image: url([[pix:theme_photo|frontpagebackgroundimage]]);
+    background-size: cover;
+}
+body.pagelayout-mydashboard {
+    background-image: url([[pix:theme_photo|dashboardbackgroundimage]]);
+    background-size: cover;
+}
+body.pagelayout-course,
+body.pagelayout-incourse {
+    background-image: url([[pix:theme_photo|incoursebackgroundimage]]);
+    background-size: cover;
+}
+body.pagelayout-embedded,
+body.pagelayout-popup,
+body.pagelayout-secure,
+body.pagelayout-print {
+    background-image: none;
+}
+body {
+    background-image: url([[pix:theme_photo|defaultbackgroundimage]]);
+    background-size: cover;
+}
