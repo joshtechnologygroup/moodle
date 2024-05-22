@@ -159,7 +159,5 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
-    // photo_extend_navigation_course();
-
     $settings->add($page);
 }
