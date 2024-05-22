@@ -117,33 +117,3 @@ function theme_photo_update_settings_images($settingname) {
     // Reset theme caches.
     theme_reset_all_caches();
 }
-
-// function add_item_in_course_nav() {
-//     Adds breadcrumbs at the top of the theme page
-//     global $PAGE;
-
-//     $previewnode = $PAGE->navigation->add(
-//     get_string('preview'),
-//     new moodle_url('/a/link/if/you/want/one.php'),
-//     navigation_node::TYPE_CONTAINER
-//     );
-
-//     $thingnode = $previewnode->add(
-//         get_string('thingname'),
-//         new moodle_url('/a/link/if/you/want/one.php')
-//     );
-
-//     $thingnode->make_active();
-
-// }
-
-function photo_extend_navigation_course(navigation_node $navigation) {
-    global $PAGE;
-    $node = navigation_node::create(get_string('pluginname', 'plugintype_pluginname'),
-        new moodle_url('/plugintype/pluginname/index.php', array('courseid' => $PAGE->course->id)),
-        navigation_node::TYPE_SETTING,
-        null,
-        null,
-        new pix_icon('i/competencies', ''));
-    $navigation->add_node($node);
-}

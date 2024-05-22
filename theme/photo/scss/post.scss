@@ -38,7 +38,13 @@ button.close:focus,
     box-shadow: 0 0 0 1px $primary;
 }
 
-.navbar {
+nav.navbar,
+.drawer,
+.drawer-toggles,
+.drawer-toggler,
+.secondary-navigation,
+#page-header
+#page-footer {
     display: none;
 }
 
@@ -49,6 +55,26 @@ button.close:focus,
 .drawer {
     top: 0;
     height: 100vh;
+}
+
+// To set container width to 100% and reset and all margin and padding
+#page-wrapper #page {
+    padding: 0 !important;
+}
+
+#page.drawers .main-inner {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: none !important;
+}
+
+#page-wrapper #page #page-content {
+    padding: 0 !important;
+}
+
+#page.drawers div[role="main"] {
+    padding: 0 !important;
 }
 
 body.pagelayout-login {
